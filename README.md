@@ -22,7 +22,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Links
 
-- [Solution URL]()
+- [Solution URL](https://github.com/emre-02/Fylo-page)
 - [Live Site URL]()
 
 ## My process
