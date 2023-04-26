@@ -1,0 +1,652 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*header*/
+
+/*Fylo*/
+
+.fylo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.fylo__logo > img {
+  width: 100px;
+}
+
+.fylo__menu > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-weight: 700;
+}
+
+/*main*/
+
+/*Files*/
+
+.files {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 32px;
+}
+
+.files__img > img {
+  width: 100%;
+}
+
+.files__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.files__text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.files__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.files__text--input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.files__text--input input,
+.files__text--input button {
+  padding: 16px;
+  margin: 16px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 3px;
+}
+
+.files__text--input input {
+  border: black;
+  border-radius: 3px;
+}
+
+.files__text--input button {
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.files__text--input button:hover {
+  background-color: hsl(224, 99%, 48%);
+}
+
+/*Productive*/
+
+.productive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 32px;
+}
+
+.productive__img > img {
+  width: 100%;
+}
+
+.productive__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+
+  margin: auto;
+  padding: 0 16px;
+}
+
+.productive__text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.productive__text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.productive__text .works {
+  color: hsl(170, 45%, 43%);
+
+  cursor: pointer;
+}
+
+.productive__text .works {
+  color: hsl(170, 45%, 43%);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.productive__text .works > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.productive__text .works > .content::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: green;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.productive__text .works > .content:hover::after {
+  content: "";
+  width: 100%;
+}
+
+.productive__card {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.productive__card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.productive__card--img {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  width: 100%;
+}
+
+.productive__card--img h2 {
+  font-size: 17px;
+  font-weight: 700;
+
+  text-align: left;
+}
+.productive__card--img p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(83, 82, 82);
+}
+
+.productive__card--img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*Access*/
+
+.access {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+  gap: 16px;
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.access h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.access p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.access__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.access__input input,
+.access__input button {
+  padding: 16px;
+  margin: 16px;
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+}
+
+.access__input input {
+  border: black;
+}
+
+.access__input button {
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.access__input button:hover {
+  background-color: hsl(224, 93%, 68%);
+}
+
+/*footer*/
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 32px 48px;
+  gap: 24px;
+}
+
+/*footer logo*/
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.footer__logo .phone,
+.footer__logo .mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/*footer about,footer-contact*/
+.footer__about,
+.footer__contact {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.footer__about ul,
+.footer__contact ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+}
+
+.footer__about ul a:hover,
+.footer__contact ul a:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+/*footer social*/
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+  padding: 16px;
+}
+
+.footer__social .facebook,
+.footer__social .twitter,
+.footer__social .instagram {
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footer__social .twitter:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+.footer__social .facebook:hover {
+  color: #1877f2;
+}
+
+.footer__social .instagram:hover {
+  color: #a33996;
+}
+
+.footer__social .facebook i,
+.footer__social .twitter i,
+.footer__social .instagram i {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
+  /*Fylo*/
+
+  .fylo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+  }
+
+  .fylo__logo > img {
+    width: 100px;
+  }
+
+  .fylo__menu > nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-weight: 700;
+  }
+
+  /*Files*/
+
+  .files {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 32px;
+  }
+
+  .files__img > img {
+    width: 100%;
+  }
+
+  .files__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 24px;
+  }
+
+  .files__text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+
+    width: 100%;
+  }
+  .files__text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .files__text--input {
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .files__text--input input,
+  .files__text--input button {
+    padding: 16px;
+    margin: 16px;
+    width: 100%;
+  }
+
+  .files__text--input input {
+    border: black;
+  }
+
+  .files__text--input button {
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*Productive*/
+
+  .productive {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 160px 32px 56px 32px;
+  }
+
+  .productive__img > img {
+    width: 100%;
+  }
+
+  .productive__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+
+    margin: auto;
+    padding: 0 16px;
+  }
+
+  .productive__text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+
+    width: 100%;
+    text-align: left;
+  }
+  .productive__text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .productive__text .works {
+    color: hsl(170, 45%, 43%);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+
+  .productive__text .works > .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+  }
+
+  .productive__text .works > .content::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+
+  .productive__text .works > .content:hover::after {
+    content: "";
+    width: 100%;
+  }
+
+  .productive__card {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 32px;
+    width: 70%;
+    margin-left: -208px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .productive__card--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .productive__card--img {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+    width: 100%;
+  }
+
+  .productive__card--img h2 {
+    font-size: 17px;
+    font-weight: 700;
+
+    text-align: left;
+  }
+  .productive__card--img p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(83, 82, 82);
+  }
+
+  .productive__card--img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  /*Access*/
+
+  .access {
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    gap: 16px;
+    text-align: center;
+    padding: 48px 32px;
+  }
+
+  .access h2 {
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+  }
+
+  .access p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 100%;
+    text-align: left;
+    margin-top: 16px;
+    width: 75%;
+  }
+
+  .access__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .access__input input,
+  .access__input button {
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .access__input input {
+    border: black;
+  }
+
+  .access__input button {
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 48px 56px 16px;
+    gap: 24px;
+  }
+}
